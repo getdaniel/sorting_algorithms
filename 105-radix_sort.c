@@ -61,7 +61,7 @@ int get_max(int *array, int size)
 void radix_count(int *array, size_t size, int sign, int *buffer)
 {
 	int count[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-        size_t indx;
+	size_t indx;
 
 	for (indx = 0; indx < size; indx++)
 		count[(array[indx] / sign) % 10] += 1;
