@@ -49,7 +49,8 @@ void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back)
 		print_array(subarr + mid, back - mid);
 
 		for (index = front, jndex = mid; index < mid && jndex < back; kndex++)
-			buff[kndex] = (subarr[index] < subarr[jndex]) ? subarr[index++] : subarr[jndex++];
+			buff[kndex] = (subarr[index] < subarr[jndex]) ?
+				subarr[index++] : subarr[jndex++];
 		for (; index < mid; index++)
 			buff[kndex++] = subarr[index];
 		for (; jndex < back; jndex++)
